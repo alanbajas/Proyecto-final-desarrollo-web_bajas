@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Notas Escolares</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Simulador de Notas Escolares">
+    <meta name="keywords" content="notas, promedio, educación, simulador">
+  </head>
+
+  <body>
+    <header class="horizontal-header">
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mis_notas.html">Mis Notas</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Simulador de Notas Escolares</h1>
+      <form id="notas-form">
+        <fieldset>
+          <legend>Introduce tus notas</legend>
+          <div class="form-group">
+            <label for="lenguaje">Lenguaje:</label>
+            <input
+              type="number"
+              id="lenguaje"
+              name="lenguaje"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Lenguaje"
+            />
+          </div>
+          <div class="form-group">
+            <label for="matematicas">Matemáticas:</label>
+            <input
+              type="number"
+              id="matematicas"
+              name="matematicas"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Matemáticas"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fisica">Física:</label>
+            <input
+              type="number"
+              id="fisica"
+              name="fisica"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Física"
+            />
+          </div>
+          <div class="form-group">
+            <label for="quimica">Química:</label>
+            <input
+              type="number"
+              id="quimica"
+              name="quimica"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Química"
+            />
+          </div>
+          <div class="form-group">
+            <label for="biologia">Biología:</label>
+            <input
+              type="number"
+              id="biologia"
+              name="biologia"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Biología"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ingles">Inglés:</label>
+            <input
+              type="number"
+              id="ingles"
+              name="ingles"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Inglés"
+            />
+          </div>
+          <div class="form-group">
+            <label for="historia">Historia:</label>
+            <input
+              type="number"
+              id="historia"
+              name="historia"
+              min="0"
+              max="10"
+              step="0.1"
+              required
+              aria-label="Nota de Historia"
+            />
+          </div>
+          <button type="submit">Calcular Promedio</button>
+        </fieldset>
+      </form>
+      <div id="resultado" class="resultado">
+        <p>Tu promedio es: <span id="promedio"></span></p>
+      </div>
+
+      <div class="informacion">
+        <h2>
+          EN TU NUEVA PAGINA DE MIS NOTAS ENCONTRATAS TU CALCUNO SEMESTRAL! PRUEBALO YA.
+        </h2>
+      </div>
+    </div>
+
+    <script src="miarchivo.js"></script>
+  </body>
+</html>

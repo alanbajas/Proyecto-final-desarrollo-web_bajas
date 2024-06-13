@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf3e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cabecera horizontal */
+.horizontal-header {
+  width: 100%;
+  background-color: #e07b39;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.horizontal-header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Encabezado */
+h1 {
+  text-align: center;
+  color: #e07b39;
+  margin-bottom: 20px;
+}
+
+/* Grupos de formulario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Campos de entrada */
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="email"]:focus {
+  border-color: #e07b39;
+}
+
+/* Área de texto */
+#nota {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#nota:focus {
+  border-color: #e07b39;
+}
+
+/* Botón de enviar */
+button,
+#sendButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e07b39;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover,
+#sendButton:hover {
+  background-color: #d46929;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sendButton {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #4caf50;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+
+/* Resultado */
+#resultado,
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Información adicional */
+.informacion {
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+}
+
+/* Tabla de notas */
+.notas-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.notas-table th,
+.notas-table td {
+  border: 1px solid #e07b39;
+  padding: 12px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.notas-table th {
+  background-color: #f2c94c;
+  color: white;
+}
+
+.notas-table tbody tr:nth-child(odd) {
+  background-color: #ffe4b3;
+}
+
+.notas-table tbody tr:nth-child(even) {
+  background-color: #fff3d0;
+}
+
+.notas-table tbody tr:hover {
+  background-color: #ffd08c;
+}
+
+.notas-table td.nota {
+  background-color: #fff3d0;
+}
+
+.notas-table td.promedio {
+  background-color: #fffbe3;
+  font-weight: bold;
+  color: #e07b39;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nota {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#sendButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
